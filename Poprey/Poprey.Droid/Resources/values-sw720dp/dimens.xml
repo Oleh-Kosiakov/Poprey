@@ -1,0 +1,58 @@
+<resources>
+
+  <!-- Tablet 10.1' -->
+
+  <!-- font definitions -->
+  <dimen name="text_small">15sp</dimen>
+  <dimen name="text_medium">20sp</dimen>
+  <dimen name="text_large">25sp</dimen>
+  <dimen name="text_larger">30sp</dimen>
+  <dimen name="text_very_large">34sp</dimen>
+  <dimen name="text_monstrous_large">37sp</dimen>
+  <dimen name="text_huge">43sp</dimen>
+  <dimen name="text_huger">33sp</dimen>
+  <dimen name="text_very_huge">47sp</dimen>
+  <dimen name="text_monstrous_huge">64sp</dimen>
+  <dimen name="text_monstrous">78sp</dimen>
+
+  <!--app margins-->
+  <dimen name="drawer_image_state_top_margin">32dp</dimen>
+  <dimen name="drawer_image_state_left_margin">20dp</dimen>
+  <dimen name="header_standerd_heigh">112dp</dimen>
+  <dimen name="header_instagram_subimage_width">25dp</dimen>
+  <dimen name="header_separator_height">35dp</dimen>
+  <dimen name="bag_collapsed_height">120dp</dimen>
+  <dimen name="bag_footer_height">250dp</dimen>
+  <dimen name="bag_post_preview_width">100dp</dimen>
+  <dimen name="bag_item_service_name_fix">-6dp</dimen>
+  <dimen name="header_service_heigh">70dp</dimen>
+  <dimen name="app_standard_left_margin">200dp</dimen>
+  <dimen name="app_standard_top_margin">150dp</dimen>
+  <dimen name="app_standard_bottom_margin">100dp</dimen>
+  <dimen name="app_standard_side_margin">20dp</dimen>
+  <dimen name="proceed_arrow_top_margin">50dp</dimen>
+  <dimen name="proceed_arrow_height">54dp</dimen>
+  <dimen name="proceed_arrow_width">138dp</dimen>
+  <dimen name="header_services_right_margin">20dp</dimen>
+  <dimen name="authentication_account_item_height">110dp</dimen>
+  <dimen name="authentication_account_item_top_padding">20dp</dimen>
+  <dimen name="authentication_account_arrow_width">100dp</dimen>
+  <dimen name="authentication_account_arrow_height">35dp</dimen>
+  <dimen name="authentication_account_cross_width">50dp</dimen>
+  <dimen name="viewpager_height">120dp</dimen>
+  <dimen name="menu_subheader_top_margin">-55dp</dimen>
+  <dimen name="instagram_control_panel_icon_height">30dp</dimen>
+  <dimen name="instagram_bottom_offset">150dp</dimen>
+  <dimen name="instagram_preview_width">200dp</dimen>
+  <dimen name="instagram_gradual_controls_size">26dp</dimen>
+  <dimen name="instagram_gradual_controls_N_size">15dp</dimen>
+  <dimen name="additional_services_edit_text_top_margin">120dp</dimen>
+  <dimen name="additional_services_additional_hint_margin">20dp</dimen>
+  <dimen name="increment_counter_horizontal_padding">15dp</dimen>
+  <dimen name="increment_counter_top_padding">8dp</dimen>
+  <dimen name="increment_counter_bottom_padding">5dp</dimen>
+  <dimen name="increment_left_padding">20dp</dimen>
+  <dimen name="increment_right_padding">21dp</dimen>
+  <dimen name="decrement_left_padding">22dp</dimen>
+  <dimen name="decrement_right_padding">20dp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+  <Poprey.Droid.Controls.AnyFontTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:textColor="@color/hashtag_label_color"
+    android:background="@drawable/hashtag_background"
+    android:textSize="@dimen/text_medium"
+    android:id="@+id/Hashtag_text"
+    android:singleLine="true"
+    local:customFont="fonts/Poppins-Bold.ttf"/>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hashtag_tick_background"
+    android:id="@+id/tick_layout"
+    android:visibility="invisible">
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:src="@drawable/tick"/>
+  </RelativeLayout>
+</FrameLayout>

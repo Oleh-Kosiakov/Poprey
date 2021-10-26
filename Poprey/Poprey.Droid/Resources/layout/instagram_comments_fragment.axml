@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!--Slider and counter view-->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/slider_and_counter_view_layout"
+    android:orientation="vertical">
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingRight="10dp"
+      android:layout_marginTop="5dp">
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_standard_left_margin"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="310dp">
+        <Poprey.Droid.Controls.AnyFontTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/app_black"
+          android:textSize="@dimen/text_huge"
+          android:id="@+id/instagram_comments_counter"
+          android:paddingTop="2dp"
+          android:singleLine="true"
+          local:customFont="fonts/Poppins-Medium.ttf" />
+        <Poprey.Droid.Controls.AnyFontTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/instagram_comments_counter"
+          android:layout_marginLeft="@dimen/app_standard_left_margin"
+          android:layout_alignParentTop="true"
+          android:textColor="@color/instagram_discount_color"
+          android:textSize="@dimen/text_medium"
+          android:id="@+id/instagram_comments_discount"
+          android:singleLine="true"
+          android:visibility="invisible"
+          local:customFont="fonts/Poppins-Medium.ttf" />
+      </RelativeLayout>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/instagram_comments_increment"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/app_background"
+        android:textSize="@dimen/text_very_large"
+        android:background="@drawable/increment_decrement_background"
+        android:id="@+id/instagram_comments_decrement"
+        android:singleLine="true"
+        android:text="-"
+        android:paddingTop="4dp"
+        android:paddingLeft="@dimen/decrement_left_padding"
+        android:paddingRight="@dimen/decrement_right_padding"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/app_background"
+        android:textSize="@dimen/text_very_large"
+        android:background="@drawable/increment_decrement_background"
+        android:id="@+id/instagram_comments_increment"
+        android:singleLine="true"
+        android:text="+"
+        android:paddingTop="3dp"
+        android:paddingLeft="@dimen/increment_left_padding"
+        android:paddingRight="@dimen/increment_right_padding"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+    </RelativeLayout>
+   
+    <!--Random/Custom-->
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp">
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/app_background"
+        android:visibility="invisible"
+        android:id="@+id/instagram_comments_white_background"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/app_standard_left_margin"
+        android:orientation="horizontal">
+        <Poprey.Droid.Controls.AnyFontTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/instagram_comments_random_label"
+          android:textSize="@dimen/text_large"
+          android:textColor="@color/colorPrimaryDark"
+          local:customFont="fonts/Poppins-Bold.ttf"/>
+        <Poprey.Droid.Controls.AnyFontTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="/"
+          android:textSize="@dimen/text_large"
+          android:textColor="@color/colorPrimaryDark"
+          local:customFont="fonts/Poppins-Bold.ttf"/>
+        <Poprey.Droid.Controls.AnyFontTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:id="@+id/instagram_comments_custom_label"
+          android:textSize="@dimen/text_large"
+          android:textColor="@color/colorPrimaryDark"
+          local:customFont="fonts/Poppins-Bold.ttf"/>
+      </LinearLayout>
+    </RelativeLayout>
+
+    <!--Comments layout-->
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/app_background"
+      android:id="@+id/instagram_comments_custom_comments_layout"
+      android:visibility="gone"
+      android:paddingTop="10dp">
+      <Poprey.Droid.Components.AdaptiveBackgroundImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/instagram_comments_save_comment_view"
+        local:src="@drawable/cross_regular_dark"
+        local:backgroundColorResource="@color/instagram_pink_header"/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/app_standard_left_margin">
+        <Poprey.Droid.Controls.AnyFontEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/instagram_comments_add_comment_edit_text"
+          android:textColor="@color/app_black"
+          android:textSize="@dimen/text_large"
+          android:layout_marginTop="10dp"
+          android:background="@android:color/transparent"
+          local:customFont="fonts/Poppins-Medium.ttf"
+          local:allowUppercaseAndSpace="true"/>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/colorAccent"
+          android:layout_marginTop="3dp"/>
+
+        <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:id="@+id/instagram_comments_comments_view"/>
+
+      </LinearLayout>
+    </RelativeLayout>
+  </LinearLayout>
+
+  <!--Posts List-->
+
+  <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_below="@+id/slider_and_counter_view_layout"
+    android:id="@+id/instagram_comments_posts_view"/>
+
+  <!--Show more layout -->
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/instagram_comments_show_more_layout"
+    android:layout_below="@+id/instagram_comments_posts_view"
+    android:layout_marginTop="25dp"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/show_more_icons"/>
+    <Poprey.Droid.Controls.AnyFontTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/instagram_comments_show_more_label"
+      android:textSize="@dimen/text_medium"
+      android:textColor="@color/instagram_pink_header"
+      local:customFont="fonts/Poppins-Medium.ttf"/>
+  </LinearLayout>
+
+  <!--Instant options-->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/app_standard_side_margin"
+    android:weightSum="4"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:id="@+id/instagram_comments_instant_options_layout"
+    android:layout_below="@+id/instagram_comments_show_more_layout">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:id="@+id/instagram_comments_instant_instant_start_layout">
+      <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitStart"
+        android:layout_height="20dp"
+        android:src="@drawable/instant_icon"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/instagram_comments_instant_instant_start_label"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/app_black"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:id="@+id/instagram_comments_instant_instant_delivery_start_layout">
+      <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitStart"
+        android:layout_height="@dimen/instagram_control_panel_icon_height"
+        android:src="@drawable/instant_delivery_icon"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/instagram_comments_instant_instant_delivery_label"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/app_black"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:id="@+id/instagram_comments_instant_permanent_layout">
+      <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitStart"
+        android:layout_height="@dimen/instagram_control_panel_icon_height"
+        android:src="@drawable/permanent_icon"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/instagram_comments_instant_permanent_label"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/app_black"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:id="@+id/instagram_comments_instant_normal_looking_layout">
+      <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitStart"
+        android:layout_height="@dimen/instagram_control_panel_icon_height"
+        android:src="@drawable/normal_looking_icon"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/instagram_comments_instant_normal_looking_label"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/app_black"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+    </LinearLayout>
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/instagram_bottom_offset"
+    android:layout_below="@+id/instagram_comments_instant_options_layout"/>
+</RelativeLayout>

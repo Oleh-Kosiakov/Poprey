@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!--Slider background view-->
+
+  <View
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:background="@color/instagram_slider_background"
+    android:id="@+id/tiktok_funs_slider_background"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/tiktok_funs_seek_bar_layout"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="@dimen/app_standard_left_margin">
+
+    <!--Slider and counter view-->
+
+    <Poprey.Droid.Controls.AnyFontTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/app_black"
+      android:layout_gravity="right"
+      android:paddingRight="11dp"
+      android:textSize="@dimen/text_huge"
+      android:id="@+id/tiktok_funs_counter"
+      android:singleLine="true"
+      local:customFont="fonts/Poppins-Medium.ttf"/>
+
+    <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingRight="10dp"
+     android:layout_marginTop="5dp">
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/app_black"
+        android:textSize="@dimen/text_large"
+        android:background="@drawable/increment_count_background"
+        android:id="@+id/tiktok_funs_increment_count"
+        android:singleLine="true"
+        android:paddingTop="@dimen/increment_counter_top_padding"
+        android:paddingBottom="@dimen/increment_counter_bottom_padding"
+        android:paddingLeft="@dimen/increment_counter_horizontal_padding"
+        android:paddingRight="@dimen/increment_counter_horizontal_padding"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tiktok_funs_increment"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/app_background"
+        android:textSize="@dimen/text_very_large"
+        android:background="@drawable/increment_decrement_background"
+        android:id="@+id/tiktok_funs_decrement"
+        android:singleLine="true"
+        android:text="-"
+        android:paddingTop="4dp"
+        android:paddingLeft="@dimen/decrement_left_padding"
+        android:paddingRight="@dimen/decrement_right_padding"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+      <Poprey.Droid.Controls.AnyFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/app_background"
+        android:textSize="@dimen/text_very_large"
+        android:background="@drawable/increment_decrement_background"
+        android:id="@+id/tiktok_funs_increment"
+        android:singleLine="true"
+        android:text="+"
+        android:paddingTop="3dp"
+        android:paddingLeft="@dimen/increment_left_padding"
+        android:paddingRight="@dimen/increment_right_padding"
+        local:customFont="fonts/Poppins-Medium.ttf"/>
+    </RelativeLayout>
+
+    <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp">
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:paddingRight="15dp"/>
+      <Poprey.Droid.Components.ExtendedSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dp"
+        android:visibility="invisible"
+        android:id="@+id/tiktok_funs_extended_seek_bar"/>
+    </FrameLayout>
+  </LinearLayout>
+
+  <!-- URL view Edit Text -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/tiktok_funs_seek_bar_layout"
+    android:layout_marginTop="@dimen/additional_services_edit_text_top_margin"
+    android:layout_marginLeft="@dimen/app_standard_left_margin">
+
+    <Poprey.Droid.Controls.AnyFontEditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="50dp"
+      android:id="@+id/tiktok_funs_video_url_edittext"
+      android:textColor="@color/app_black"
+      android:textSize="@dimen/text_huge"
+      android:layout_marginLeft="7dp"
+      android:background="@android:color/transparent"
+      local:customFont="fonts/Poppins-Medium.ttf"/>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="-50dp"
+      android:id="@+id/tiktok_funs_underline"
+      android:background="@color/colorAccent"/>
+    <Poprey.Droid.Controls.AnyFontTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/additional_services_additional_hint_margin"
+      android:textColor="@color/app_black"
+      android:textSize="@dimen/text_large"
+      android:id="@+id/tiktok_funs_url_additional_hint"
+      android:singleLine="true"
+      local:customFont="fonts/Poppins-Medium.ttf"/>
+  </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" package="com.poprey.poprey" android:installLocation="preferExternal" android:versionCode="2">
+	<uses-sdk android:minSdkVersion="21" />
+	<application android:label="Poprey" android:icon="@mipmap/icon">
+		<meta-data android:name="android.max_aspect" android:value="21.9" />
+	</application>
+</manifest>

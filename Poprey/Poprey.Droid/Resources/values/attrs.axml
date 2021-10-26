@@ -1,0 +1,20 @@
+<resources>
+  <declare-styleable name="AdaptiveBackgroundImageView">
+    <attr name="src" format="reference" />
+    <attr name="backgroundColorResource" format="reference" />
+    <attr name="loadFromUrl" format="boolean" />
+  </declare-styleable>
+  <declare-styleable name="MvxCircleCachedImageView">
+    <attr name="civ_border_width" format="dimension" />
+    <attr name="civ_border_color" format="color" />
+    <attr name="civ_border_overlay" format="boolean" />
+    <attr name="civ_circle_background_color" format="color" />
+  </declare-styleable>
+  <declare-styleable name="AnyFontTextView">
+    <attr name="customFont" format="string"/>
+  </declare-styleable>
+  <declare-styleable name="AnyFontEditText">
+    <attr name="customFont" format="string"/>
+    <attr name="allowUppercaseAndSpace" format="boolean"/>
+  </declare-styleable>
+</resources>

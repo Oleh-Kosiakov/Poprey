@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:local="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/app_background">
+  <View
+    android:layout_width="0dp"
+    android:layout_height="@dimen/header_standerd_heigh"
+    android:background="@color/hashtag_overlay_background_color"
+    android:id="@+id/header_width_range_background"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"/>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/header_root_layout">
+
+    <!-- Popup header -->
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/header_standerd_heigh"
+      android:paddingRight="10dp"
+      android:id="@+id/popup_relative_layout">
+      <ImageView
+        android:id="@+id/popup_drawer_state_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="@dimen/drawer_image_state_top_margin"
+        android:layout_marginLeft="@dimen/drawer_image_state_left_margin"/>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/popup_drawer_state_image"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+          android:id="@+id/popup_header_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:drawablePadding="3dp"
+          android:textColor="@color/app_background"
+          android:textSize="@dimen/text_large"/>
+      </RelativeLayout>
+    
+    </RelativeLayout>
+
+    <!-- Services Icons Layout -->
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/header_service_heigh"
+      android:orientation="horizontal"
+      android:weightSum="4"
+      android:layout_marginLeft="@dimen/app_standard_left_margin"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp"
+      android:paddingRight="@dimen/header_services_right_margin"
+      android:id="@+id/header_main_container">
+      <Poprey.Droid.Components.AdaptiveBackgroundImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/instagram_header_item"
+        local:src="@drawable/instagram_icon"
+        local:backgroundColorResource="@color/instagram_pink_header"/>
+      <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/instagram_accounts_list"
+        android:scaleX="-1"
+        android:visibility="gone"/>
+      <FrameLayout
+        android:layout_width="26dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center">
+        <View
+          android:layout_width="2dp"
+          android:layout_height="@dimen/header_separator_height"
+          android:background="@color/app_black"/>
+      </FrameLayout>
+      <Poprey.Droid.Components.AdaptiveBackgroundImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tiktok_header_icon"
+        local:src="@drawable/tik_tok_icon"
+        local:backgroundColorResource="@color/tiktok_pink_header"/>
+      <View
+        android:layout_width="13dp"
+        android:layout_height="match_parent"/>
+      <Poprey.Droid.Components.AdaptiveBackgroundImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/hashtag_header_icon"
+        local:src="@drawable/hashtag_icon"
+        local:backgroundColorResource="@color/hastag_gray_header"/>
+    </LinearLayout>
+  </LinearLayout>
+
+  <!-- Main drawer state image -->
+
+  <ImageView
+    android:id="@+id/drawer_state_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="@dimen/drawer_image_state_top_margin"
+    android:layout_marginLeft="@dimen/drawer_image_state_left_margin"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+  <FFImageLoading.Cross.MvxCachedImageView
+    android:layout_width="@dimen/instagram_preview_width"
+    android:layout_height="@dimen/instagram_preview_width"
+    android:id="@+id/post_preview_main_image"/>
+
+  <View
+    android:layout_width="@dimen/instagram_preview_width"
+    android:layout_height="@dimen/instagram_preview_width"
+    android:background="#99000000"
+    android:id="@+id/post_preview_shadow_overlay"
+    android:visibility="invisible"/>
+
+  <Poprey.Droid.Controls.AnyFontTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_small"
+    android:id="@+id/post_preview_number_label"
+    android:singleLine="true"
+    android:layout_centerInParent="true"
+    local:customFont="fonts/Poppins-Medium.ttf"
+    android:visibility="invisible"/>
+
+</RelativeLayout>

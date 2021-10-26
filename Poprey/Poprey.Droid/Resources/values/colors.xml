@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- Material colors -->
+	<color name="colorPrimary">#1a1a1a</color>
+	<color name="colorPrimaryDark">#D0D3D8</color>
+	<color name="colorAccent">#D0D3D8</color>
+	<!-- White to Black -->
+	<color name="white">#FFFFFF</color>
+	<color name="light_gray">#EFF2F5</color>
+	<color name="med_gray">#C7D2DC</color>
+	<color name="dark_gray">#FF2B343D</color>
+	<color name="black">#0D131A</color>
+	<color name="text_gray">#5A6570</color>
+  <!--App Colors-->
+  <color name="internet_connected">#49BCAD</color>
+  <color name="app_error">#9B1F2A</color>
+  <color name="internet_connected_accent">#6CDFD0</color>
+  <color name="internet_disconnected_accent">#CA2F3D</color>
+  <color name="gray">#C7CACF</color>
+  <color name="app_background_accent">#F3F4F5</color>
+  <color name="app_background">#F9F9F9</color>
+  <color name="app_black">#08192D</color>
+  <color name="bag_background">#08192D</color>
+  <color name="bag_image_background">#1c2c3e</color>
+  <color name="instagram_pink_header">#E1A4C2</color>
+  <color name="tiktok_pink_header">#E66858</color>
+  <color name="hastag_gray_header">#E5DFC8</color>
+  <color name="authentication_add_color">#C9CBCE</color>
+  <color name="authentication_list_color">#ACB3BF</color>
+  <color name="authentication_separator_color">#AAACB3BF</color>
+  <color name="bag_discount_label_color">#ACB3BF</color>
+  <color name="bag_discount_label_background">#4C566C</color>
+  <color name="bag_cross_button_background">#223143</color>
+  <color name="bag_footer_background">#303D52</color>
+  <color name="payment_method_background">#8E92A9</color>
+  <color name="hashtag_label_background">#E7E9EB</color>
+  <color name="hashtag_label_color">#A1A7B3</color>
+  <color name="hashtag_overlay_background_color">#33D0D3D9</color>
+  <color name="hashtag_tick_background">#49BCAD</color>
+  <color name="instagram_slider_background">#33E1A4C2</color>
+  <color name="instagram_slider_accent_background">#ECD6E2</color>
+  <color name="instagram_discount_color">#9B1F2A</color>
+  <color name="thank_you_status_bar_color">#B97D9A</color>
+  <color name="thank_you_background_color">#E1A4C2</color>
+  <color name="thank_you_subtitle_color">#9F7A95</color>
+  <color name="thank_you_subprice_color">#F0E1E1</color>
+  <color name="adds_gray_color">#C1C5CA</color>
+</resources>

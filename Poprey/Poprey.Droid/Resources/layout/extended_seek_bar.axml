@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+  <Poprey.Droid.Controls.AnyFontTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    local:customFont="fonts/Poppins-Medium.ttf"
+    android:textSize="@dimen/text_very_huge"
+    android:textColor="@color/app_black"
+    android:id="@+id/counter"
+    android:visibility="gone"/>
+  <Poprey.Droid.Controls.DiscountSeekBar
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:progressTint="@color/app_black"
+    android:thumbTint="@color/app_black"
+    android:id="@+id/seek_bar"/>
+</LinearLayout>
